@@ -5,11 +5,6 @@ include(FetchContent)
 
 set(CMAKE_CXX_STANDARD 23)
 
-  if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 19.12.25835)
-    set(CMAKE_CXX20_STANDARD_COMPILE_OPTION "-std:c++latest")
-    set(CMAKE_CXX20_EXTENSION_COMPILE_OPTION "-std:c++latest")
-  endif()
-
 execute_process(
         COMMAND git rev-parse --short HEAD
         OUTPUT_VARIABLE COMMIT_HASH
@@ -25,6 +20,8 @@ configure_file(
 add_definitions(-DCOMMIT_HASH="${COMMIT_HASH}")
 
 if(MSVC)
+    add_definitions(-D_HAS_EXPERIMENTAL_COROUTINE)
+    
     add_compile_options(/MT)
 
     add_compile_options(/bigobj)
