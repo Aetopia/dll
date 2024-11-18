@@ -1,6 +1,7 @@
 ﻿
 #include "Constraints.hpp"
 #include "Engine.hpp"
+#include <coroutine>
 
 float Constraints::PercentageConstraint(float percentage, const std::string &edge, bool ignore_stack) {
     float screenWidth = MC::windowSize.x;

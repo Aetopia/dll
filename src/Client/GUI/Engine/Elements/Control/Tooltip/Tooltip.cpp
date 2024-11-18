@@ -1,7 +1,7 @@
 #include "../../../Engine.hpp"
 #include "../../../../../Module/Manager.hpp"
 #include "ToolTipParams.hpp"
-
+#include <coroutine>
 #define clickgui ModuleManager::getModule("ClickGUI")
 
 #define colors_text HexToColorF(clickgui->settings.getSettingByName<std::string>("colors_text")->value)

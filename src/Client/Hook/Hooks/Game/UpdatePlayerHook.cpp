@@ -1,6 +1,6 @@
 #include "UpdatePlayerHook.hpp"
 #include "../../../../Utils/Memory/Game/SignatureAndOffsetManager.hpp"
-
+#include <coroutine>
 void UpdatePlayerHook::callback(void* a1, void* a2, void* a3) {
     //  Combo counter and reach counter logic will be done here in the next commit.
     auto event = nes::make_holder<UpdatePlayerEvent>();

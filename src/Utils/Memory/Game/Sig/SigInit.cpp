@@ -2,7 +2,7 @@
 #include "../../../Logger/Logger.hpp"
 
 #include "../SignatureAndOffsetManager.hpp"
-
+#include <coroutine>
 void SigInit::init2140() {
     Logger::custom(fg(fmt::color::gold), "Signatures", "Loading signatures for 1.21.40");
 

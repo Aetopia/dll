@@ -3,7 +3,7 @@
 // Made by marioCST, ported by FreezeEngine
 
 #include <winrt/Windows.ApplicationModel.h>
-
+#include <coroutine>
 #include "../Utils.hpp"
 
 Version WinrtUtils::getMCVersion() {

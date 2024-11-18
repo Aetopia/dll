@@ -1,6 +1,6 @@
 #include "PositionUtils.hpp"
 #include "../../SDK/SDK.hpp"
-
+#include <coroutine>
 Vec2<float> PositionUtils::getUIScale() {
     auto screenSize = SDK::clientInstance->getGuiData()->getScreenSize();
     auto uiSize = SDK::clientInstance->getGuiData()->getScreenSizeScaled();

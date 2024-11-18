@@ -2,7 +2,7 @@
 #include "../../../GUI/D2D.hpp"
 #include "SwapchainHook.hpp"
 #include "../../../Client.hpp"
-
+#include <coroutine>
 typedef void(__thiscall *original)(ID3D12CommandQueue *queue, UINT numCommandLists,
                                    const ID3D12CommandList **ppCommandLists);
 

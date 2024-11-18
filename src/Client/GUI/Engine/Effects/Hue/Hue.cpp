@@ -1,6 +1,6 @@
 #include "../../Engine.hpp"
 #include "../../../../Hook/Hooks/Render/SwapchainHook.hpp"
-
+#include <coroutine>
 void FlarialGUI::ApplyHue(float Hue) {
 
     if (SwapchainHook::init) {

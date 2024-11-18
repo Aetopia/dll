@@ -2,7 +2,7 @@
 #include "../../../../SDK/SDK.hpp"
 #include "../../../../SDK/Client/Network/Packet/TextPacket.hpp"
 #include "../../../Events/Network/PacketEvent.hpp"
-
+#include <coroutine>
 // text
 void SendPacketHook::callback(LoopbackPacketSender *pSender, Packet *pPacket) {
     auto event = nes::make_holder<PacketSendEvent>(pPacket);

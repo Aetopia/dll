@@ -6,7 +6,7 @@
 #include <format>
 #include <filesystem>
 #include <fstream>
-
+#include <coroutine>
 
 namespace Logger {
     namespace Color {

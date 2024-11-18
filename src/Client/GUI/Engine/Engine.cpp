@@ -2,6 +2,7 @@
 #include "../../Client.hpp"
 #include <utility>
 #include <winrt/base.h>
+#include <coroutine>
 #include <cmath>
 #include <imgui_internal.h>
 #include <variant>

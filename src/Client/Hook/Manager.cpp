@@ -1,5 +1,5 @@
 ﻿#pragma once
-
+#include <coroutine>
 #include "Hooks/Render/ResizeHook.hpp"
 #include "Hooks/Render/CommandListHook.hpp"
 #include "Hooks/Render/SetupAndRenderHook.hpp"

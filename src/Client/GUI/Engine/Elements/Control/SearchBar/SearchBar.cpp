@@ -1,6 +1,6 @@
 #include "../../../../../Module/Modules/ClickGUI/Elements/ClickGUIElements.hpp"
 #include "../../../../../Module/Modules/ClickGUI/ClickGUI.hpp"
-
+#include <coroutine>
 #define clickgui ModuleManager::getModule("ClickGUI")
 
 #define colors_text FlarialGUI::HexToColorF(clickgui->settings.getSettingByName<std::string>("colors_text")->value)

@@ -2,7 +2,7 @@
 #include "../../../../SDK/SDK.hpp"
 #include "../../../Client.hpp"
 #include "../../../../Utils/Memory/Game/SignatureAndOffsetManager.hpp"
-
+#include <coroutine>
 KeyHook::KeyHook() : Hook("key_hook", GET_SIG_ADDRESS("Keyboard::feed")) {}
 
 void KeyHook::enableHook() {

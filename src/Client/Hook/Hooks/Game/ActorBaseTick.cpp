@@ -1,7 +1,7 @@
 #include <fstream>
 #include "ActorBaseTick.hpp"
 #include "../../../Client.hpp"
-
+#include <coroutine>
 void ActorBaseTick::enableHook() {
 
     auto base = address; // Player vtable

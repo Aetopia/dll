@@ -2,7 +2,7 @@
 
 #include "../../../Logger/Logger.hpp"
 #include "../SignatureAndOffsetManager.hpp"
-
+#include <coroutine>
 void OffsetInit::init2140() {
     Logger::custom(fg(fmt::color::golden_rod), "Offsets", "Loading offsets for 1.21.4X");
 

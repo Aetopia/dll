@@ -1,7 +1,7 @@
 #include "Hook.hpp"
 #include <libhat/Scanner.hpp>
 #include <utility>
-
+#include <coroutine>
 Hook::Hook(std::string name, uintptr_t address) {
     this->name = std::move(name);
     this->address = address;

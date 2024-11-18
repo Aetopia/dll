@@ -1,6 +1,6 @@
 #include "HudMobEffectsRenderer.hpp"
 #include "../../../../Utils/Memory/Game/SignatureAndOffsetManager.hpp"
-
+#include <coroutine>
 HudMobEffectsRendererHook::HudMobEffectsRendererHook() : Hook("HudMobEffectsRenderer_render", GET_SIG_ADDRESS("HudMobEffectsRenderer::render")) {}
 
 void HudMobEffectsRendererHook::enableHook() {

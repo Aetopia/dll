@@ -1,9 +1,9 @@
 #include "../../../Engine.hpp"
 #include "../../../../../Module/Manager.hpp"
 #include "../../../../../Module/Modules/ClickGUI/ClickGUI.hpp"
-
+#include <coroutine>
 #define clickgui ModuleManager::getModule("ClickGUI")
-
+#include <coroutine>
 #define colors_text HexToColorF(clickgui->settings.getSettingByName<std::string>("colors_text")->value)
 #define o_colors_text clickgui->settings.getSettingByName<float>("o_colors_text")->value
 #define colors_text_rgb clickgui->settings.getSettingByName<bool>("colors_text_rgb")->value

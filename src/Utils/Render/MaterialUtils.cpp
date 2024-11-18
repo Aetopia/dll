@@ -1,7 +1,7 @@
 #include "MaterialUtils.hpp"
 
 #include "../../SDK/Client/Render/Tessellator/RenderMaterialGroup.hpp"
-
+#include <coroutine>
 static mce::MaterialPtr* uiFillColor = nullptr;
 static mce::MaterialPtr* uiTextured = nullptr;
 static mce::MaterialPtr* particlesAlpha = nullptr;

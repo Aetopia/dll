@@ -1,6 +1,6 @@
 #include "../../../../Engine.hpp"
 #include "../../../../../../Hook/Hooks/Render/SwapchainHook.hpp"
-
+#include <coroutine>
 void FlarialGUI::BlurRect(D2D1_ROUNDED_RECT rect) {
 
 

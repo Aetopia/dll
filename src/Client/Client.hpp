@@ -3,6 +3,7 @@
 #include "Hook/Manager.hpp"
 #include "Module/Manager.hpp"
 #include <vector>
+#include <coroutine> 
 //winrt :fire:
 #include "winrt/windows.applicationmodel.core.h"
 #include "winrt/Windows.UI.ViewManagement.h"
