@@ -3,7 +3,7 @@ project(Flarial VERSION 1.0 LANGUAGES CXX)
 
 include(FetchContent)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 20)
 
 execute_process(
         COMMAND git rev-parse --short HEAD
